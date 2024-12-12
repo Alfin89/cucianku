@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\LaundryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 // Routes
 Route::apiResource('orders', OrderController::class);
+Route::apiResource('laundries', LaundryController::class);
